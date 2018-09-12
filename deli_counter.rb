@@ -14,12 +14,13 @@ def line(line)
 end
 
 
-def take_a_number(line, new_person)
+def take_a_number(current_number)
   line << new_person
+  new_number = current_number + 1
   
-  puts "Welcome, " + new_person + ". You are number " + line.length.to_s + " in line."
+  puts "Welcome, " + ". You are number " + new_number.to_s + " in line."
   
-  return line
+  return new_number
 end
 
 
